@@ -21,8 +21,7 @@ Here are some sources that could be useful when creating a basic Github Page:
 - ["Create your first Github Pages Website"](https://www.youtube.com/watch?v=BA_c3bGQXlQ)
 
 ## Contributors
-Eli Ross
-Bachelor of Science in Computer Science (_In Progress_)
+Eli Ross<br/>Bachelor of Science in Computer Science (_In Progress_)
 
 ![Hosted Image](https://bearcatsports.com/common/controls/image_handler.aspx?thumb_prefix=headshot_1&image_path=/images/2017/9/8/Eli_Ross_195.jpg "Eli-Ross")
 
