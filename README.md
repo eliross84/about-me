@@ -1,4 +1,4 @@
-# eli-ross
+# Eli Ross
 
 ## Repository Links
 - [Eli Ross' Github Page](https://github.com/eliross84)
