@@ -6,7 +6,7 @@
 - [Source](https://github.com/eliross84/about-me)
 
 ## About
-This repository will be used for displaying my work and portfolio for future employers and fellow developers can look and evaluate my work.
+This repository will be used for displaying my work and portfolio for future employers and fellow developers to look at and evaluate my work.
 
 ## Recommended Tools
 There are many tools of which are very helpful when creating a repository through Github Pages such as...
