@@ -15,12 +15,74 @@
 
     <link rel="stylesheet" href="css/ross.css">
 
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Bootstrap Sidebar</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <p>Dummy Heading</p>
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Home 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Page 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+
+        </nav>
+        <!-- Page Content -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Toggle Sidebar</span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </div>
+
     <title>Eli Ross</title>
 </head>
 
 <body>
-
-    <nav></nav>
 
     <header>
         <h1>
@@ -32,11 +94,12 @@
 
     <main>
         <article>
+            <h2>About me</h2>
+
             <section>
-                <h2>Current</h2>
-                Currently I am a Junior at Northwest Missouri State University (Maryville, MO) pursuing a <i>Bachelor's
-                    in Computer
-                    Science</i>.
+                <h4>Current</h4>
+                Currently I am a Junior at Northwest Missouri State University (Maryville, MO) pursuing a
+                <i>Bachelor's in Computer Science</i> (Expected Graduation Date: December 2020)
                 <br>
                 I am employed by Nucor-LMP here in Maryville, and am interning as an onsite PC Technician. My daily
                 tasks consist
@@ -49,22 +112,25 @@
             </section>
 
             <section>
-                <h2>Background</h2>
+                <h4>Background</h4>
                 I have practiced with many different IDE's. Some of which are:
                 <ul>
+                    <li>IntelliJ IDEA</li>
+                    <li>Microsoft Visual Studio Code</li>
                     <li>Netbeans</li>
+                    <li>Notepad++</li>
                 </ul>
             </section>
 
             <section>
-                <h2>Plans</h2>
+                <h4>Plans</h4>
             </section>
 
             <aside>
                 When not in the classroom and working I enjoy disc golfing and playing any kind of competitive sport.
             </aside>
 
-            <h3>Here are some of my profiles you may take a look at:</h3>
+            <h4>Profile Links</h4>
             <ul>
                 <li>
                     <a href="www.linkedin.com/in/eli-ross-4b409616b">LinkedIn</a>
