@@ -33,6 +33,10 @@ h1 {
     margin-top: 40px;
 }
 
+h1.home{
+    text-align: center;
+}
+
 body{
     height: 125vh;
     font-family: 'Times New Roman', Times, serif;
@@ -64,3 +68,18 @@ h4{
     width: 100%;
 }
 
+a:link, a:visited {
+    background-color: grey;
+    color: white;
+    padding: 3rem;
+    margin: 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 2rem;
+    height: 10rem;
+  }
+  
+  a:hover, a:active {
+    background-color: rgb(151, 149, 149);
+  }
