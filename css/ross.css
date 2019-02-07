@@ -85,19 +85,19 @@ h4{
     width: 100%;
 }
 
-a:link, a:visited {
+a.home:link, a:visited {
     background-color: grey;
     color: white;
     padding: 3rem;
-    margin: 2rem;
+    margin: auto;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    display: block;
     border-radius: 2rem;
     height: 15rem;
     width: 15rem;
   }
   
-  a:hover, a:active {
+a.home:hover, a:active {
     background-color: rgb(151, 149, 149);
   }
