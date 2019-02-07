@@ -4,6 +4,7 @@
 - [Eli Ross' Github Page](https://github.com/eliross84)
 - [Webpage Link](https://eliross84.github.io/about-me/)
 - [Source](https://github.com/eliross84/about-me)
+- [Navigation Bar Resource](https://codetheweb.blog/2017/12/12/style-a-navigation-bar-css/)
 
 ## About
 This repository will be used for displaying my work and portfolio for future employers and fellow developers to look at and evaluate my work.
