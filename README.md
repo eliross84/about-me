@@ -5,7 +5,7 @@
 - [Webpage Link](https://eliross84.github.io/about-me/)
 - [Source](https://github.com/eliross84/about-me)
 - [Navigation Bar Resource](https://codetheweb.blog/2017/12/12/style-a-navigation-bar-css/)
-- [Home Page](C:\Users\s528926\44563\about-me\html\home.html)
+- [Home Page](https://eliross84.github.io/about-me/html/home.html)
 
 ## About
 This repository will be used for displaying my work and portfolio for future employers and fellow developers to look at and evaluate my work.
