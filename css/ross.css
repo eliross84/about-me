@@ -100,3 +100,7 @@ a.home:link, a.home:visited {
 a.home:hover, a.home:active {
     background-color: rgb(151, 149, 149);
   }
+
+img{
+    border-radius: 40%;
+}
