@@ -104,3 +104,8 @@ a.home:hover, a.home:active {
 img{
     border-radius: 40%;
 }
+
+img.logo{
+    height:40px;
+    width:40px;
+}
