@@ -15,6 +15,10 @@
     <!--Icon Library-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!-- JQuery -->
+    <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+
+    <!-- My stylesheet-->
     <link rel="stylesheet" href="https://eliross84.github.io/about-me/css/ross.css">
 
     <title>Portfolio</title>
@@ -65,33 +69,57 @@
         <article>
             <h4>Here is a sample Javascript in HTML practice</h4>
             <section>
-                Input a number and click calculate to see the square root of that number!
+                Input a positive number and click calculate to see the square root of that number!
                 <br>
                 Input number here:
-                <input id = "num" type = "number">
+                <input id="num" type="number" value = "1">
             </section>
             <section>
-                <button id = "button" class = "btn btn-primary">Click here for Square Root!</button>
+                <button id="button" class="btn btn-primary">Click here for Square Root!</button>
             </section>
-            <section id = "result"></section>
+            <section id="result"></section>
+            <section>
+                <button id = "wipe" class = "btn btn-primary">Click here to delete your storage of values!</button>
+            </section>
         </article>
 
     </main>
 
     <script>
+
+    </script>
+
+    <script>
         console.log('SCRIPT START')
         console.log('DECLARE TESTABLE FUNCTIONS......')
-        function sqroot(x){
+        function sqroot(x) {
             return Math.sqrt(x)
         }
         console.log('DECLARE EVENT LISTENERS.......')
 
-        document.getElementById('button').addEventListener('click', function(){
+        window.addEventListener('load', (event)=>{
+            console.log('    Starting initialization')
+            if(localStorage.getItem('num')){
+                document.getElementById('num').value = localStorage.getItem('num')
+                console.log('   Stored num = ${localStorage.num}')
+            }
+        })
+
+        document.getElementById('button').addEventListener('click', function () {
             const x = parseInt(document.getElementById('num').value)
             console.log('num = ', x)
             const answer = 'The square root of ' + x + ' is ' + Math.sqrt(x)
             document.getElementById('result').innerHTML = answer
+            localStorage.setItem('num', x)
         })
+
+        document.getElementById('wipe').addEventListener('click', () =>{
+            console.log('    Starting wupe clicker handler')
+            localStorage.removeItem('num')
+            console.log('   Finished with wipe')
+        })
+
+        console.log('SCRIPT END')
 
     </script>
 
