@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- JQuery -->
-    <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
 
     <!-- My stylesheet-->
     <link rel="stylesheet" href="https://eliross84.github.io/about-me/css/ross.css">
@@ -72,22 +72,25 @@
                 Input a positive number and click calculate to see the square root of that number!
                 <br>
                 Input number here:
-                <input id="num" type="number" value = "1">
+                <input id="num" type="number" value="1">
             </section>
             <section>
                 <button id="button" class="btn btn-primary">Click here for Square Root!</button>
             </section>
             <section id="result"></section>
             <section>
-                <button id = "wipe" class = "btn btn-primary">Click here to delete your storage of values!</button>
+                <button id="wipe" class="btn btn-primary">Click here to delete your storage of values!</button>
             </section>
         </article>
 
     </main>
 
-    <script>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+    <script src = "https://eliross84.github.io/about-me/scripts/qunit.js"></script>
 
-    </script>
 
     <script>
         console.log('SCRIPT START')
@@ -97,12 +100,18 @@
         }
         console.log('DECLARE EVENT LISTENERS.......')
 
-        window.addEventListener('load', (event)=>{
+        window.addEventListener('load', (event) => {
             console.log('    Starting initialization')
-            if(localStorage.getItem('num')){
+            if (localStorage.getItem('num')) {
                 document.getElementById('num').value = localStorage.getItem('num')
                 console.log('   Stored num = ${localStorage.num}')
             }
+        })
+
+        window.addEventListener('load', (event) => {
+            console.log('    Start initialization')
+            document.getElementById('num').value = localStorage.getItem('num')
+            console.log('   Stored num = ${localStorage.num}')
         })
 
         document.getElementById('button').addEventListener('click', function () {
@@ -113,10 +122,10 @@
             localStorage.setItem('num', x)
         })
 
-        document.getElementById('wipe').addEventListener('click', () =>{
-            console.log('    Starting wupe clicker handler')
+        document.getElementById('wipe').addEventListener('click', () => {
+            console.log('   Starting wipe click handler')
             localStorage.removeItem('num')
-            console.log('   Finished with wipe')
+            console.log(' Finished wipe click handler')
         })
 
         console.log('SCRIPT END')
